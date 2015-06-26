@@ -13,4 +13,16 @@
 	$dkey = array_rand($data);
 	$filecontents = file_get_contents($data[$dkey]);
 	echo $filecontents;     
+	
+	$requestMethod = 'POST';
+	$id = $filecontents;	
+	$postfields = array(
+			'id' => $id
+	);
+	
+	$url = 'https://api.twitter.com/1.1/statuses/retweet/'.$id.'.json';
+	$twitter = new TwitterAPIExchange($settings);
+	$twitter->buildOauth($url, $requestMethod)
+	->setPostfields($postfields)
+	->performRequest();
 ?>

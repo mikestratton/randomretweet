@@ -1,8 +1,23 @@
 {
     "name": "mikestratton/randomretweet",
+    "authors": [
+        {
+            "name": "mikestratton",
+            "email": "mike@mikestratton.net",
+            "homepage": "https://mikestratton.net",
+            "role": "developer"
+        }
+    ],
+
     "description": "Twitter bot that randomly retweets from other users.",
-    "require": {
-        "php": "^7.2",
-        "mikestratton/randomretweet": "1.*"
-    }
+    "keywords": [
+        "twitter bot",
+        "retweet",
+        "packagist"
+    ],
+    "license": "MIT",
+    
+    "require": {},
 }
+
+

@@ -1,0 +1,8 @@
+{
+    "name": "mikestratton/randomretweet",
+    "description": "Twitter bot that randomly retweets from other users.",
+    "require": {
+        "php": "^7.2",
+        "mikestratton/randomretweet": "1.*"
+    }
+}
